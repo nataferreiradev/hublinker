@@ -1,0 +1,6 @@
+click
+SetupTools
+requests
+rich
+configparser
+keyring
