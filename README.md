@@ -8,19 +8,19 @@ clone or fork the project and go to root directory
 Downloading dependencies 
 
 ```bash 
-    pip install - r requirements.txt
+pip install - r requirements.txt
 ```
 
 installing project (method recommended by the dependency) 
 
 ```bash 
-pip install.
+pip install .
 ```
 
 or 
 
 ```bash 
-python3 setup.py 
+python3 setup.py install
 ```
 
 if you want to run without installation use in the root folder of the project
@@ -33,6 +33,7 @@ python3 -m hublinker
 ## Documentation 
 - limit 
 lists the consumption and usage limit of the gitHub api 
+
 ```bash 
 hublinker 
 ```
@@ -69,7 +70,7 @@ hublinker config
 config adds the token for authentication in the api (can be generating in settings -> developer settings -> personal access token -> tokens) 
 
 ```bash 
-hublinker set-token 
+hublinker config set-token 
 ```
 
 2) set-clone-path 
@@ -77,7 +78,7 @@ hublinker set-token
 config adds the path where new repositories will be cloned 
 
 ```bash 
-hublinker set-clone-path 
+hublinker config set-clone-path 
 ```
 
 3) set-rows-page 
