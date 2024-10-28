@@ -3,68 +3,88 @@
 Hublinker is a command line tool (CLI) for easy navigation and management of repositories on GitHub directly from the terminal. Ideal for developers who work intensively with GitHub and want a fast and user-friendly interface to perform common operations. 
 
 ## Installation 
-https 
-
-``bash git clone `` 
-
-ssh 
-
-``bash git clone ``
+clone or fork the project and go to root directory
 
 Downloading dependencies 
 
-``bash pip install - r requirements.txt `` 
+```bash 
+    pip install - r requirements.txt
+```
 
 installing project (method recommended by the dependency) 
 
-``bash pip install. `` 
+```bash 
+pip install.
+```
 
 or 
 
-``bash python3 setup.py ``
+```bash 
+python3 setup.py 
+```
 
 if you want to run without installation use in the root folder of the project
 
-``bash python3 - hublinker ``
+```bash
+python3 -m hublinker 
+
+```
 
 ## Documentation 
 - limit 
 lists the consumption and usage limit of the gitHub api 
-``bash hublinker ``
+```bash 
+hublinker 
+```
+
 - repos 
 group of commands related to repositories 
-``bash hublinker repos``
+```bash 
+hublinker repos
+```
 
 1) public 
 
 it will list a user's public repositories and allow cloning 
 
-``bash hublinker repos public --user <user> `` 
+```bash 
+hublinker repos public --user <user> 
+```
 
 2) private 
 
 it will list your private repositories through the configured token and will allow you to clone 
 
-``bash hublinker repos `` 
+```bash 
+hublinker repos 
+```
 
 - config configuration options 
 
-``bash hublinker config`` 
+```bash 
+hublinker config
+```
 
 1) set-token
 config adds the token for authentication in the api (can be generating in settings -> developer settings -> personal access token -> tokens) 
 
-``bash hublinker set-token `` 
+```bash 
+hublinker set-token 
+```
 
 2) set-clone-path 
 
 config adds the path where new repositories will be cloned 
 
-``bash hublinker set-clone-path `` 
+```bash 
+hublinker set-clone-path 
+```
 
 3) set-rows-page 
 config changes the row limit when querying repositories 
-``bash hublinker config set-rows-page `` 
+```bash 
+hublinker config set-rows-page 
+```
 
 ## Contributing 
 Contributions are welcome! 

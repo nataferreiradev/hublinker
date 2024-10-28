@@ -5,16 +5,8 @@ Hublinker é uma ferramenta de linha de comando (CLI) para facilitar a navegaç�
 
 
 ## Instalação
-https
-```bash
-  git clone 
-```
+clone ou faça forque do projeto e vá para a pasta raiz
 
-ssh
-
-```bash
-  git clone 
-```
     
 Baixando dependências
 ```bash
