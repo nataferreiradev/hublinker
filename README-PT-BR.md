@@ -122,7 +122,7 @@ para bugFix
 - Crie uma nova branch (`git checkout -b bugFix/BugFix_numeroIssue`)
 - Commit suas mudanças (`git commit -m 'Add BugFix_numeroIssue'`)
 - Faça push para a branch (`git push origin bugFix/BugFix_numeroIssue`)
-- Abra um Pull Request
+
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
