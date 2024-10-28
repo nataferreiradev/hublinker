@@ -1,3 +1,4 @@
+
 # Hublinker
 
 Hublinker é uma ferramenta de linha de comando (CLI) para facilitar a navegação e o gerenciamento de repositórios no GitHub diretamente do terminal. Ideal para desenvolvedores que trabalham intensamente com GitHub e querem uma interface rápida e amigável para realizar operações comuns.
@@ -53,7 +54,7 @@ grupo de comandos relacionados a repositórios
 
 1) public
 
-irá listar repositorios públicos de um usuário e permitirá fazer clone
+irá listar repositórios públicos de um usuário e permitirá fazer clone
 
 ```bash
     hublinker repos public --user <usuário>
@@ -61,7 +62,7 @@ irá listar repositorios públicos de um usuário e permitirá fazer clone
 
 1) private
 
-irá listar seus repositorios privados através do token configurado e permitirá fazer clone
+irá listar seus repositórios privados através do token configurado e permitirá fazer clone
 
 ```bash
     hublinker repos private
@@ -78,7 +79,7 @@ opções de configuração
 1) config set-token
 
 adiciona o token para autenticação na api
-(pode ser gerando em configurações -> configurações de desenvolvedor -> token de acesso pessoal -> tokens)
+(pode ser gerado em configurações -> configurações de desenvolvedor -> token de acesso pessoal -> tokens)
 
 ```bash
     hublinker config set-token
@@ -117,17 +118,12 @@ para hotfix
 - Abra um Pull Request
 
 para bugFix
+(adicione número da issue apenas se possuir se não adicione uma breve descrição)
 - Crie uma nova branch (`git checkout -b bugFix/BugFix_numeroIssue`)
 - Commit suas mudanças (`git commit -m 'Add BugFix_numeroIssue'`)
 - Faça push para a branch (`git push origin bugFix/BugFix_numeroIssue`)
 - Abra um Pull Request
-
-utilize o padrão
-[conventionalcommits](https://www.conventionalcommits.org/)
-
-
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
 
