@@ -1,0 +1,32 @@
+name: Validate Branch Name
+
+# Executa o workflow em push para qualquer branch, exceto 'main' 
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  branch-name-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Validate branch name
+        env:
+          GITHUB_REF: ${{ github.ref }}
+        run: |
+          # Extraindo o nome da branch
+          branch_name="${GITHUB_REF#refs/heads/}"
+          
+          # Defina o regex para o padrão de nome da branch
+          # Exemplo: "feature/", "hotfix/", "bugfix/" seguido de um nome com letras, números e hifens
+          if [[ ! "$branch_name" =~ ^(feature|hotfix|bugfix)/[a-zA-Z0-9._-]+$ ]]; then
+            echo "❌ Branch name '$branch_name' is invalid. Use 'feature/', 'hotfix/', or 'bugfix/' as a prefix."
+            exit 1
+          else
+            echo "✅ Branch name '$branch_name' is valid."
+          fi
+
